@@ -8,6 +8,14 @@
 }
 
 
+@media screen and (max-width: 480px) {
+    #contact-email,
+    #contact-tel,
+    #contact-message {
+        width: 2500%;
+    }
+}
+
 /* 
 
     Colors I like:
