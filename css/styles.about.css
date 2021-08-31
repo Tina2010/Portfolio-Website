@@ -1,0 +1,194 @@
+﻿
+.skill-list {
+    border: 2px solid #FFFFFF;
+}
+
+    .skill-list th {
+        border: 1px solid #FFFFFF;
+    }
+
+    .skill-list th {
+        border-left: none;
+        border-right: none;
+        border-top: none;
+    }
+
+    .skill-list td {
+        border: 5px;
+        background-color: var(--color-table-bg);
+        padding-left: 10px;
+        padding-right: 10px;
+        color: var(--color-default-text);
+    }
+
+#article1-about {
+    margin-top: 30px;
+}
+
+#freepik_stories-programming {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 800px;
+    text-align: center;
+}
+
+@keyframes lightSpeedRight {
+    0% {
+        fill: #edc655;
+    }
+
+    50% {
+        fill: #fcffad;
+    }
+
+    100% {
+        fill: #f76414;
+    }
+}
+
+@keyframes lightSpeedLeft {
+    from {
+        transform: translate3d(-50%, 0, 0) skewX(20deg);
+        opacity: 0;
+    }
+
+    60% {
+        transform: skewX(-10deg);
+        opacity: 1;
+    }
+
+    80% {
+        transform: skewX(2deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes zoomOut {
+    0% {
+        opacity: 0;
+        transform: scale(1.5);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes wind {
+    0% {
+        transform: rotate( 0deg );
+    }
+
+    25% {
+        transform: rotate( 1deg );
+    }
+
+    75% {
+        transform: rotate( -1deg );
+    }
+}
+
+@keyframes floating {
+    0% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+svg#freepik_stories-programming:not(.animated) .animable {
+    opacity: 0;
+}
+
+svg#freepik_stories-programming.animated #freepik--Floor--inject-8 {
+    animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) lightSpeedRight;
+    animation-delay: 0s;
+}
+
+svg#freepik_stories-programming.animated #freepik--Shadows--inject-8 {
+    animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) lightSpeedLeft;
+    animation-delay: 0s;
+}
+
+svg#freepik_stories-programming.animated #freepik--Desk--inject-8 {
+    animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) lightSpeedRight;
+    animation-delay: 0s;
+}
+
+svg#freepik_stories-programming.animated #freepik--Plant--inject-8 {
+    animation: 1s 1 forwards linear zoomOut;
+    animation-delay: 0s;
+}
+
+svg#freepik_stories-programming.animated #freepik--Character--inject-8 {
+    animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) zoomIn;
+    animation-delay: 0s;
+}
+
+svg#freepik_stories-programming.animated #freepik--speech-bubble--inject-8 {
+    animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) lightSpeedRight,1.5s Infinite linear wind;
+    animation-delay: 0s,1s;
+}
+
+svg#freepik_stories-programming.animated #freepik--text-boxes--inject-8 {
+    animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) lightSpeedLeft,1.5s Infinite linear floating;
+    animation-delay: 0s,1s;
+}
+
+.qr__picture {
+    float: none;
+    width: 250px;
+    margin-right: 40px;
+}
+
+
+/* 
+
+    Colors I like:
+    light orange: #fbda8b
+    brown-orange (dark): #948773
+    gold: #c8a224
+
+*/
+
+/*
+   for
+
+    <a href="https://www.google.com" class="my-link" id="my-link">A link</a>
+
+    the descending selectors for css rules are:
+
+    
+    #my-link = id-selector
+    -my-link = class selector
+    a = element selector
+
+    selectors to be choosen = ID>class>element
+
+*/

@@ -1,0 +1,34 @@
+﻿#contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 5px;
+    min-height: 5px;
+    grid-gap: 10px;
+    line-height: normal;
+}
+
+
+/* 
+
+    Colors I like:
+    light orange: #fbda8b
+    brown-orange (dark): #948773
+    gold: #c8a224
+
+*/
+
+/*
+   for
+
+    <a href="https://www.google.com" class="my-link" id="my-link">A link</a>
+
+    the descending selectors for css rules are:
+
+    
+    #my-link = id-selector
+    -my-link = class selector
+    a = element selector
+
+    selectors to be choosen = ID>class>element
+
+*/
