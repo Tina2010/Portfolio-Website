@@ -277,18 +277,3 @@ input[type=submit] {
 
 */
 
-/*
-   for
-
-    <a href="https://www.google.com" class="my-link" id="my-link">A link</a>
-
-    the descending selectors for css rules are:
-
-    
-    #my-link = id-selector
-    -my-link = class selector
-    a = element selector
-
-    selectors to be choosen = ID>class>element
-
-*/

@@ -34,6 +34,11 @@
     width: 100%;
 }
 
+/* Hide the link that should open and close the topnav on small screens */
+.icon {
+    display: none;
+  }
+
 .center {
     clear: both;
     display: flex;
@@ -121,9 +126,9 @@ a {
     /* No underlining when hovering over a link */
     text-decoration: none;
 }
-    a:visited {
-        /*change of colors for visited links not wanted*/
-    }
+    /*a:visited {
+        change of colors for visited links not wanted
+    }*/
 
     a:hover,
     a:focus {
@@ -146,7 +151,7 @@ button,
     font-weight: bold;
     text-decoration: none;
     /*adds spacing to the button*/
-    padding: 10px;
+    padding: 5px;
     border-radius: 3px;
     /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
@@ -223,6 +228,7 @@ input[type=submit] {
     section {
         padding: 2px 1rem;
     }
+
 }
 
 /* 
@@ -234,18 +240,3 @@ input[type=submit] {
 
 */
 
-/*
-   for
-
-    <a href="https://www.google.com" class="my-link" id="my-link">A link</a>
-
-    the descending selectors for css rules are:
-
-    
-    #my-link = id-selector
-    -my-link = class selector
-    a = element selector
-
-    selectors to be choosen = ID>class>element
-
-*/

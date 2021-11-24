@@ -12,6 +12,10 @@
 }
 /*end grid fallback*/
 
+text {
+    color: #950740;
+    font-weight: 600;
+}
 
 @supports (display: grid) {
     .project-list {
