@@ -3,9 +3,9 @@
 A responsive website built using HTML and CSS that showcases my
 professional portfolio, which includes the projects I have build over time.
 
-## Hosted on webhost
+## Hosted on GitHub Pages
 
- https://portfolio-tr.000webhostapp.com/index.html
+https://tina2010.github.io/Portfolio-Website/
 
 ## Key Features
 
