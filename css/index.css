@@ -148,6 +148,18 @@ a {
     box-shadow: none;
 }
 
+.project-list img {
+    max-width: 100%;
+}
+
+#mobile {
+    max-width: 49%;
+}
+
+.project-list .break {
+    padding: 0;
+}
+
 .button-container {
     display: flex;
     padding: 0;
