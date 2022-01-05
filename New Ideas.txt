@@ -1,1 +1,0 @@
-1. magnifing glass over qr code -> click -> opens popup with bigger qr code
