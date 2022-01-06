@@ -12,22 +12,33 @@
 
 <body>
     <header class="page-header">
-        <nav class="page-header__item">
+        <nav class="page-header__item_wide">
             <ul role="menubar" class="navigation-list">
-                <li role="presentation">
-                    <a href="#top" role="menuitem" class="navigation-list__item">Home</a>
-                </li>
-                <li role="placeholder">|</li>
                 <li role="presentation">
                     <a href="#about_me" role="menuitem" class="navigation-list__item">About Me</a>
                 </li>
                 <li role="placeholder">|</li>
                 <li role="presentation">
-                    <a href="#my_projects" role="menuitem" class="navigation-list__item">My Work</a>
+                    <a href="#my_projects" role="menuitem" class="navigation-list__item">My Projects</a>
                 </li> 
                 <li role="placeholder">|</li>               
                 <li role="presentation">
                     <a href="#contact" role="menuitem" class="navigation-list__item">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="page-header__item_mobile">
+            <ul role="menubar" class="navigation-list">
+                <li role="presentation">
+                    <a href="#about_me" role="menuitem" class="navigation-list__item"><i class="far fa-address-card"></i></a>
+                </li>
+                <li role="placeholder">|</li>
+                <li role="presentation">
+                    <a href="#my_projects" role="menuitem" class="navigation-list__item"><i class="fas fa-tasks"></i></a>
+                </li> 
+                <li role="placeholder">|</li>               
+                <li role="presentation">
+                    <a href="#contact" role="menuitem" class="navigation-list__item"><i class="fas fa-at"></i></a>
                 </li>
             </ul>
         </nav>
@@ -208,20 +219,37 @@
         </div>
     </main>
 
-    <button onclick="topFunction()" id="topButton" title="Go to top"><img src="img/arrow.png" alt="To Top Button" /></button>
+    <div class="sidemenu">
+        <li role="presentation">
+            <a href="#about_me" role="menuitem" class="navigation-list__item"><i class="far fa-address-card"></i></a>
+        </li>
+        <li role="presentation">
+            <a href="#my_projects" role="menuitem" class="navigation-list__item"><i class="fas fa-tasks"></i></a>
+        </li>              
+        <li role="presentation">
+            <a href="#contact" role="menuitem" class="navigation-list__item"><i class="fas fa-at"></i></a>
+        </li>
+    </div>
+
+    <button onclick="topFunction()" id="topButton" title="Go to top">Scroll to Top</button>
 
 
     <script>
 
         mybutton = document.getElementById("topButton");
+        mymenu = document.getElementsByClassName("sidemenu");
 
         window.onscroll = function() {scrollFunction()};
 
         function scrollFunction() {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                 mybutton.style.display = "block";
+                for (var i=0;i<mymenu.length;i+=1){
+                    mymenu[i].style.display = 'block';}
             } else {
                 mybutton.style.display = "none";
+                for (var i=0;i<mymenu.length;i+=1){
+                    mymenu[i].style.display = 'none';}
             }
         }
 
