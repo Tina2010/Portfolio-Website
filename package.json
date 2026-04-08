@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Tina2010.github.io/my-app-copy",
+  "homepage": "https://tina-rittmueller.com",
   "dependencies": {
     "@ant-design/icons": "^6.1.0",
     "antd": "^6.2.1",
